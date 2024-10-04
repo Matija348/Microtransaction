@@ -20,8 +20,26 @@ while (köpa != "1" && köpa !="2" && köpa !="3")
     köpa = Console.ReadLine();
 }
 
+//priset per ply
 
+int price = 0;
 
+if (köpa == "1")
+{
+    price = 500;
+}
+
+else if (köpa == "2")
+{
+    price = 1000;
+}
+
+else if (köpa == "3")
+{
+    price = 2000;
+}
+
+//Hur Många
 
 
 
