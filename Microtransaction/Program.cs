@@ -1,4 +1,6 @@
-﻿int wallet = 10000;
+﻿using System.Runtime.InteropServices;
+
+int wallet = 10000;
 
 while (wallet > 0)
 
@@ -40,9 +42,17 @@ else if (köpa == "3")
 }
 
 //Hur Många
-
-
-
+Console.WriteLine("Hur många vill du köpa din jävla invandrare!!!");
+int numToBuy = 0;
+while (numToBuy == 0)
+{
+    string num = Console.ReadLine();
+    bool success = int.TryParse(num, out numToBuy);
+    if (success == false)
+    {
+        Console.WriteLine("Du är en idiot skriva en siffra!");
+    }
+}
 
 
 
