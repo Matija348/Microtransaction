@@ -54,12 +54,20 @@ while (numToBuy == 0)
     }
 }
 
+ int finalCost = price * numToBuy;
 
-
-
-
+ if (finalCost <= wallet)
+  {
+    Console.WriteLine("Ja, det går bra.");
+    wallet -= finalCost;
+  }
+  else
+  {
+    Console.WriteLine("Nej du är pank");
+  }
 
 }
 
-
+Console.WriteLine("Nu har du slut på pengar!");
+Console.WriteLine("Tryck på ENTER för att avsluta");
 Console.ReadLine();
